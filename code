@@ -1,0 +1,57 @@
+import java.util.Scanner;
+class Main{
+    public static void main(String [] args)
+    {
+       Scanner scan=new Scanner(System.in);
+       
+       System.out.println("How many courses you had this semester");
+       int n=scan.nextInt();
+       
+       double[] course=new double[n];
+       for(int i=0;i<course.length;i++)
+       {
+           double marks;
+           System.out.println("Enter your average for the course " +(i+1)+ " :");
+           marks=scan.nextDouble();
+           if(marks>=0&&marks<=100)
+           {
+               course[i]=marks;
+           }
+           else{
+               System.out.println("Invlaid choice");
+               break;
+           }
+       }
+       
+       double sum=0;
+       for(int i=0;i<course.length;i++)
+       {
+           sum=sum+course[i];
+       }
+       
+       double avg=sum/course.length;
+       
+       if(avg>90)
+       {
+           System.out.println("you have A");
+       }
+       else if(avg<=90&&avg>80)
+       {
+           System.out.println("you have B");
+       }
+       else if(avg<=80&&avg>60)
+       {
+           System.out.println("you have C");
+       }
+       else if(avg<=60&&avg>40)
+       {
+           System.out.println("you have D");
+       }
+       else if(avg<40){
+           System.out.println("you have failed");
+       }
+       else{
+           System.out.println("Please try again");
+       }
+    }
+}
