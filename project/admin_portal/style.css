@@ -1,0 +1,32 @@
+ body{
+	 background-color : lightblue;
+	}
+#topimage{
+	
+}
+#right_side{
+			vertical-align: top;
+			text-align : center;
+		}
+fieldset {
+	  background-color: lightblue;
+}
+
+legend {
+	background-color: blue;
+	color: white;
+	padding-top : 4px;
+	padding-left: 7px;
+	padding-right : 7px;
+	padding-bottom :4px ;
+}
+input {
+	margin-top : 20px;
+	padding:10px;
+	padding-right : 150px;
+}
+#input_button{
+	background-color : blue;
+	color : white;
+}
+fieldset lable{color : darkblue;}
